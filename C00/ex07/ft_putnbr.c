@@ -1,41 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yael-mar <elmardi.yas@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/04 12:35:57 by yael-mar          #+#    #+#             */
-/*   Updated: 2026/03/04 13:52:27 by yael-mar         ###   ########.fr       */
+/*   Created: 2026/03/04 13:45:34 by yael-mar          #+#    #+#             */
+/*   Updated: 2026/03/04 13:49:30 by yael-mar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_comb(void)
+void	ft_putnbr(int nb)
 {
-	char	i;
-	char	j;
-	char	k;
+	char	c;
 
-	i = '0';
-	while (i <= '7')
-	{
-		j = i + 1;
-		while (j <= '8')
-		{
-			k = j + 1;
-			while (k <= '9')
-			{
-				write (1, &i, 1);
-				write (1, &j, 1);
-				write (1, &k, 1);
-				if (i != '7' || j != '8' || k != '9')
-					write (1, ", ", 2);
-				k++;
-			}
-			j++;
-		}
-		i++;
-	}
+	c = nb;
+	write (1, &c, 1);
+}
+
+int main()
+{
+	ft_putnbr(42);
 }
