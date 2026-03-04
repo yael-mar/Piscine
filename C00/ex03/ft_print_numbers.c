@@ -6,25 +6,25 @@
 /*   By: yael-mar <elmardi.yas@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 07:53:06 by yael-mar          #+#    #+#             */
-/*   Updated: 2026/03/04 07:53:06 by yael-mar         ###   ########.fr       */
+/*   Updated: 2026/03/04 12:02:14 by yael-mar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_numbers()
+void	ft_print_numbers(void)
 {
-    char i;
+	char	i;
 
-    i = '0';
-    while (i <= '9')
-    {
-        write (1, &i, 1);
-        i++;
-    }
+	i = '0';
+	while (i <= '9')
+	{
+		write(1, &i, 1);
+		i++;
+	}
 }
 
-int main()
+int	main(void)
 {
-    ft_print_numbers();
+	ft_print_numbers();
 }

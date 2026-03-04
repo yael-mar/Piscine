@@ -2,9 +2,12 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yael-mar <elmardi.yas@gmail.com>           +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
+/*                                                    +:+ +:+
+	+:+     */
+/*   By: yael-mar <elmardi.yas@gmail.com>           +#+  +:+
+	+#+        */
+/*                                                +#+#+#+#+#+
+	+#+           */
 /*   Created: 2026/03/04 07:37:51 by yael-mar          #+#    #+#             */
 /*   Updated: 2026/03/04 07:37:51 by yael-mar         ###   ########.fr       */
 /*                                                                            */
@@ -12,14 +15,15 @@
 
 #include <unistd.h>
 
-void ft_print_alphabet()
-{
-    char c;
 
-    c = 'a';
-    while (c <= 'z')
-    {
-        write (1, &c, 1);
-        c++;
-    }
+void	ft_print_alphabet(void)
+{
+	char c;
+
+	c = 'a';
+	while (c <= 'z')
+	{
+		write(1, &c, 1);
+		c++;
+	}
 }
