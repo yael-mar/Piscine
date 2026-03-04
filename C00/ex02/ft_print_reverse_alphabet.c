@@ -12,10 +12,9 @@
 
 #include <unistd.h>
 
-
 int	ft_print_reverse_alphabet(void)
 {
-	char c;
+	char	c;
 
 	c = 'z';
 	while (c >= 'a')

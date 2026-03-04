@@ -9,12 +9,13 @@
 /*   Updated: 2026/03/04 12:04:41 by yael-mar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_is_negative(int n)
 {
-	char negative;
-	char positive;
+	char	negative;
+	char	positive;
 
 	negative = 'N';
 	positive = 'P';
